@@ -105,7 +105,6 @@ Access the live demo: [NovaFlow Live](https://nova-flow-a-project-management-too
 ![Alt Text](./assets/screenshot_1.png)
 ![Alt Text](./assets/screenshot_2.png)
 ![Alt Text](./assets/screenshot_3.png)
-![Alt Text](./assets/screenshot_4.png)
 ![Alt Text](./assets/screenshot_5.png)
 
 ---
