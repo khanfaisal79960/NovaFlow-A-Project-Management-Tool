@@ -8,7 +8,7 @@ NovaFlow is a lightweight, web-based project management tool designed to help in
 
 ## 🌐 Live Project
 
-Access the live demo: [NovaFlow Live](https://nova-flow-a-project-management-tool.vercel.app/landing)
+Access the live demo: [NovaFlow Live](https://novaflow-beryl.vercel.app)
 
 ---
 
