@@ -6,6 +6,21 @@ NovaFlow is a lightweight, web-based project management tool designed to help in
 
 ---
 
+## 🌐 Live Project
+
+Access the live demo: [NovaFlow Live](https://nova-flow-a-project-management-tool.vercel.app/landing)
+
+---
+
+## 📸 Project Screenshots
+
+![Alt Text](./assets/screenshot_1.png)
+![Alt Text](./assets/screenshot_2.png)
+![Alt Text](./assets/screenshot_3.png)
+![Alt Text](./assets/screenshot_5.png)
+
+---
+
 ## ✨ Features
 
 ### 🔐 User Authentication
@@ -38,18 +53,22 @@ NovaFlow is a lightweight, web-based project management tool designed to help in
 
 ---
 
-## 🛠️ Technologies Used
+## 💡 Usage Guide
 
-### Backend
-- **Flask** – Lightweight Python web framework.
-- **Werkzeug** – Provides password hashing and security utilities.
-- **Markdown** – Python library for converting Markdown to HTML.
+### 🧑‍💻 Sign Up / Log In
+Register a new account or log in with existing credentials.
 
-### Frontend
-- **Jinja2** – Flask's templating engine.
-- **Tailwind CSS** – Utility-first CSS framework for rapid UI development.
-- **Markdown-it** – JavaScript Markdown parser for optional client-side rendering.
-- **Font Awesome** – Icon library for various UI elements.
+### 👨‍👩‍👧‍👦 Teams
+- Navigate to the **Teams** tab.
+- **Create** a team and share the **Team ID**.
+- **Join** existing teams by entering a valid **Team ID**.
+
+### 📂 Projects
+- Add a new project with a name, description (Markdown supported), team (optional), and status.
+- View, edit, and delete your projects.
+
+### 📋 Tasks
+- Add, edit, delete, and mark tasks as complete/incomplete inside any project.
 
 ---
 
@@ -68,7 +87,8 @@ cd NovaFlow
 python -m venv venv
 
 # On Windows
-.env\Scriptsctivate
+.
+env\Scripts ctivate
 
 # On macOS/Linux
 source venv/bin/activate
@@ -77,7 +97,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## ▶️ Running the Application
+### ▶️ Running the Application
 
 Ensure your virtual environment is active, then run the following command:
 
@@ -95,40 +115,18 @@ http://127.0.0.1:5000/
 
 ---
 
-## 🌐 Live Project
+## 🛠️ Technologies Used
 
-Access the live demo: [NovaFlow Live](https://nova-flow-a-project-management-tool.vercel.app/landing)
+### Backend
+- **Flask** – Lightweight Python web framework.
+- **Werkzeug** – Provides password hashing and security utilities.
+- **Markdown** – Python library for converting Markdown to HTML.
 
----
-
-## 📸 Project Screenshots
-![Alt Text](./assets/screenshot_1.png)
-![Alt Text](./assets/screenshot_2.png)
-![Alt Text](./assets/screenshot_3.png)
-![Alt Text](./assets/screenshot_5.png)
-
----
-
-## 💡 Usage Guide
-
-### 🧑‍💻 Sign Up / Log In
-
-Register a new account or log in with existing credentials.
-
-### 👨‍👩‍👧‍👦 Teams
-
-- Navigate to the **Teams** tab.
-- **Create** a team and share the **Team ID**.
-- **Join** existing teams by entering a valid **Team ID**.
-
-### 📂 Projects
-
-- Add a new project with a name, description (Markdown supported), team (optional), and status.
-- View, edit, and delete your projects.
-
-### 📋 Tasks
-
-- Add, edit, delete, and mark tasks as complete/incomplete inside any project.
+### Frontend
+- **Jinja2** – Flask's templating engine.
+- **Tailwind CSS** – Utility-first CSS framework for rapid UI development.
+- **Markdown-it** – JavaScript Markdown parser for optional client-side rendering.
+- **Font Awesome** – Icon library for various UI elements.
 
 ---
 
