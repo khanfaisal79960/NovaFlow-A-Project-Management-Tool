@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Add New Task to {{ project.name }}{% endblock %}
+
+{% block content %}
+<div class="max-w-3xl mx-auto bg-gradient-to-br from-gray-800 to-gray-700 p-8 rounded-2xl shadow-xl border border-blue-700 animate-fade-in">
+    <h1 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 mb-8 text-center">Add New Task to <br>"{{ project.name }}"</h1>
+    <form action="{{ url_for('add_task', project_id=project.id) }}" method="POST" class="space-y-6">
+        <div>
+            <label for="name" class="block text-gray-300 text-lg font-semibold mb-2">Task Name</label>
+            <input type="text" id="name" name="name" required
+                   class="w-full p-4 bg-gray-900 border border-blue-600 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-200 placeholder-gray-500 transition-all duration-200 ease-in-out shadow-inner"
+                   placeholder="e.g., Implement User Authentication">
+        </div>
+        <div>
+            <label for="description" class="block text-gray-300 text-lg font-semibold mb-2">Description (Markdown Supported)</label>
+            <textarea id="description" name="description" rows="5"
+                      class="w-full p-4 bg-gray-900 border border-blue-600 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-200 placeholder-gray-500 transition-all duration-200 ease-in-out shadow-inner"
+                      placeholder="Detailed description of the task, use Markdown."></textarea>
+        </div>
+        <div>
+            <label for="due_date" class="block text-gray-300 text-lg font-semibold mb-2">Due Date</label>
+            <input type="date" id="due_date" name="due_date"
+                   class="w-full p-4 bg-gray-900 border border-blue-600 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-200 placeholder-gray-500 transition-all duration-200 ease-in-out shadow-inner">
+        </div>
+        <div>
+            <label for="status" class="block text-gray-300 text-lg font-semibold mb-2">Status</label>
+            <select id="status" name="status"
+                    class="w-full p-4 bg-gray-900 border border-blue-600 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-200 transition-all duration-200 ease-in-out shadow-inner">
+                <option value="To Do">To Do</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Blocked">Blocked</option>
+                <option value="Done">Done</option>
+            </select>
+        </div>
+        <div class="flex justify-end space-x-4">
+            <a href="{{ url_for('project_detail', project_id=project.id) }}" class="bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transform transition-all duration-200 ease-in-out hover:scale-105">Cancel</a>
+            <button type="submit" class="bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-50">
+                Add Task
+            </button>
+        </div>
+    </form>
+</div>
+{% endblock %}

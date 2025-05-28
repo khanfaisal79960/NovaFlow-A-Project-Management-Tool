@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1a202c; 
+}
+
+.markdown-content h1, .markdown-content h2, .markdown-content h3, .markdown-content h4, .markdown-content h5, .markdown-content h6 {
+    color: #a78bfa;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.markdown-content h1 { font-size: 2.5em; }
+.markdown-content h2 { font-size: 2em; }
+.markdown-content h3 { font-size: 1.75em; }
+.markdown-content h4 { font-size: 1.5em; }
+.markdown-content h5 { font-size: 1.25em; }
+.markdown-content h6 { font-size: 1em; }
+
+.markdown-content p {
+    margin-bottom: 1em;
+    color: #cbd5e0; 
+}
+
+.markdown-content a {
+    color: #6366f1; 
+    text-decoration: underline;
+    transition: color 0.2s ease-in-out;
+}
+
+.markdown-content a:hover {
+    color: #818cf8; 
+}
+
+.markdown-content ul, .markdown-content ol {
+    margin-bottom: 1em;
+    padding-left: 1.5em;
+    color: #cbd5e0;
+}
+
+.markdown-content li {
+    margin-bottom: 0.5em;
+}
+
+.markdown-content strong {
+    color: #fde047; 
+}
+
+.markdown-content em {
+    color: #a78bfa; 
+}
+
+.markdown-content code {
+    background-color: #334155; 
+    color: #93c5fd; 
+    padding: 0.2em 0.4em;
+    border-radius: 0.3em;
+    font-family: 'Fira Code', 'Cascadia Code', monospace; 
+}
+
+.markdown-content pre {
+    background-color: #1e293b; 
+    color: #e2e8f0; 
+    padding: 1em;
+    border-radius: 0.5em;
+    overflow-x: auto;
+    margin-bottom: 1em;
+    border: 1px solid #475569; 
+}
+
+.markdown-content blockquote {
+    border-left: 4px solid #8b5cf6; 
+    padding-left: 1em;
+    margin-left: 0;
+    font-style: italic;
+    color: #9ca3af; 
+}
+
+.markdown-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+.markdown-content th, .markdown-content td {
+    border: 1px solid #475569; 
+    padding: 0.8em;
+    text-align: left;
+}
+
+.markdown-content th {
+    background-color: #334155; 
+    color: #e2e8f0;
+}
+
+.markdown-content hr {
+    border: none;
+    border-top: 1px solid #475569; 
+    margin: 2em 0;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseSlow {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.01); opacity: 0.9; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-pulse-slow {
+    animation: pulseSlow 3s infinite ease-in-out;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.7s ease-out forwards;
+    opacity: 0; /* Start hidden */
+}
+
+.animate-zoom-in {
+    animation: zoomIn 0.3s ease-out forwards;
+}
+
+
+.grid > div:nth-child(1) { animation-delay: 0.1s; }
+.grid > div:nth-child(2) { animation-delay: 0.2s; }
+.grid > div:nth-child(3) { animation-delay: 0.3s; }
+.grid > div:nth-child(4) { animation-delay: 0.4s; }
+.grid > div:nth-child(5) { animation-delay: 0.5s; }
+.grid > div:nth-child(6) { animation-delay: 0.6s; }
+
+
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    header p {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+    }
+    h1 {
+        font-size: 3rem; 
+    }
+    .flex.justify-between.items-center.mb-8 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .flex.justify-between.items-center.mb-8 a {
+        margin-top: 1rem;
+    }
+    .max-w-3xl.mx-auto {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .text-4xl.font-extrabold {
+        font-size: 2.5rem;
+    }
+    .text-3xl.font-bold {
+        font-size: 2rem;
+    }
+    .text-2xl.font-bold {
+        font-size: 1.5rem;
+    }
+    .flex.justify-end.space-x-4 {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    .flex.justify-end.space-x-4 button,
+    .flex.justify-end.space-x-4 a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+}
+
+input[type="date"] {
+    color-scheme: dark; 
+}
