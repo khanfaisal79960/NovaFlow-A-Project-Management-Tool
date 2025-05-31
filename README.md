@@ -1,145 +1,81 @@
-# NovaFlow: Streamline Your Projects, Unleash Your Potential
+# 🎓 NovaFlow — Streamline Your Projects, Unleash Your Potential
 
-*A glimpse of the NovaFlow project dashboard.*
+![Cover](./static/images/cover_image.png)
 
-NovaFlow is a lightweight, web-based project management tool designed to help individuals and small teams organize their projects and tasks efficiently. It provides a clean, intuitive interface for tracking project progress, managing tasks, and collaborating within teams.
+**NovaFlow** is a lightweight, web-based project management tool built with **Flask**. It helps individuals and small teams organize their projects and tasks efficiently with a clean, intuitive interface and powerful collaboration features.
 
 ---
 
-## 🌐 Live Project
+## 🌐 Live Demo
 
-Access the live demo: [NovaFlow Live](https://novaflow-beryl.vercel.app)
+👉 [**View Live Demo**](https://novaflow-beryl.vercel.app)
+
+---
+
+## 🔥 Features
+
+- 🔐 **User Authentication**: Secure sign-up and login/logout flow.
+- 📁 **Project Management**: Create, update, track, and delete projects.
+- ✅ **Task Management**: Assign, complete, and manage tasks with progress tracking.
+- 👥 **Team Collaboration**: Create/join teams with unique IDs and manage team-based projects.
+- 📝 **Markdown Support**: Write beautifully formatted descriptions using markdown.
+- 📱 **Fully Responsive**: Built with Tailwind CSS for a mobile-friendly experience.
+- ❌ **Custom 404 Page**: Friendly UX for broken or invalid routes.
 
 ---
 
 ## 📸 Project Screenshots
 
-![Alt Text](./assets/screenshot_1.png)
-![Alt Text](./assets/screenshot_2.png)
-![Alt Text](./assets/screenshot_3.png)
-![Alt Text](./assets/screenshot_5.png)
+| Dashboard | Teams | Projects | Tasks | 404 Page |
+|----------|-------|----------|-------|----------|
+| ![Screenshot 1](./assets/screenshot_1.png) | ![Screenshot 2](./assets/screenshot_2.png) | ![Screenshot 3](./assets/screenshot_3.png) | ![Screenshot 4](./assets/screenshot_4.png) | ![Screenshot 5](./assets/screenshot_5.png) |
 
 ---
 
-## ✨ Features
+## 🧠 How it Works
 
-### 🔐 User Authentication
-- Secure user registration and login/logout functionality.
-
-### 📁 Project Management
-- Create, view, edit, and delete projects.
-- Projects can be personal or associated with a team.
-- Track project progress with customizable statuses:
-  `Not Started`, `Planning`, `In Progress`, `Testing`, `Completed`, `On Hold`, `Cancelled`.
-
-### ✅ Task Management
-- Add, view, edit, and delete tasks within each project.
-- Mark tasks as complete or pending.
-- Tasks inherit team association from their parent project.
-
-### 👥 Team Collaboration
-- Create new teams or join existing ones using a unique Team ID.
-- View members of a team.
-- Projects can be assigned to teams, allowing team members to access and manage them.
-
-### 💻 Responsive Design
-- Built with Tailwind CSS for a modern, mobile-friendly interface.
-
-### 📝 Markdown Support
-- Project and task descriptions support Markdown formatting.
-
-### ❌ Custom 404 Page
-- A friendly custom page for non-existent routes.
+- Users register and join teams using unique Team IDs.
+- Each project can be assigned a status: `Not Started`, `Planning`, `In Progress`, etc.
+- Tasks belong to projects and reflect their team association.
+- Descriptions use Markdown for rich formatting.
+- A simple local database (JSON or SQLite) manages all data in development.
 
 ---
 
-## 💡 Usage Guide
+## 🛠️ Tech Stack
 
-### 🧑‍💻 Sign Up / Log In
-Register a new account or log in with existing credentials.
-
-### 👨‍👩‍👧‍👦 Teams
-- Navigate to the **Teams** tab.
-- **Create** a team and share the **Team ID**.
-- **Join** existing teams by entering a valid **Team ID**.
-
-### 📂 Projects
-- Add a new project with a name, description (Markdown supported), team (optional), and status.
-- View, edit, and delete your projects.
-
-### 📋 Tasks
-- Add, edit, delete, and mark tasks as complete/incomplete inside any project.
+- **Backend**: Flask (Python)
+- **Frontend**: Tailwind CSS, HTML, Jinja2
+- **Auth & Logic**: Werkzeug, Markdown
+- **Extras**: Font Awesome, Markdown-it
 
 ---
 
 ## 🚀 Getting Started
 
-### ✅ Prerequisites
-Make sure you have Python 3.8+ and pip installed.
-
-### 📦 Installation
-
 ```bash
 git clone https://github.com/your-username/NovaFlow.git
 cd NovaFlow
-
-# Create and activate virtual environment
 python -m venv venv
-
-# On Windows
-.
-env\Scripts ctivate
-
-# On macOS/Linux
-source venv/bin/activate
-
-# Install dependencies
+source venv/bin/activate  # or .\venv\Scripts\activate on Windows
 pip install -r requirements.txt
-```
-
-### ▶️ Running the Application
-
-Ensure your virtual environment is active, then run the following command:
-
-```bash
 python app.py
 ```
 
-Now, open your browser and go to:
+Now open your browser and visit: [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
 
-```text
-http://127.0.0.1:5000/
-```
-
-> **Note:** The `app.py` file includes `_initialize_test_data()` which adds a sample user and team. Remove or comment out this function before deploying to production.
+> 💡 Remove `_initialize_test_data()` from `app.py` before production deployment.
 
 ---
 
-## 🛠️ Technologies Used
+## 🙋‍♂️ Author
 
-### Backend
-- **Flask** – Lightweight Python web framework.
-- **Werkzeug** – Provides password hashing and security utilities.
-- **Markdown** – Python library for converting Markdown to HTML.
+**Faisal Khan**
 
-### Frontend
-- **Jinja2** – Flask's templating engine.
-- **Tailwind CSS** – Utility-first CSS framework for rapid UI development.
-- **Markdown-it** – JavaScript Markdown parser for optional client-side rendering.
-- **Font Awesome** – Icon library for various UI elements.
+- 🌐 [Portfolio](https://khanfaisal.netlify.app)
+- 💼 [LinkedIn](https://www.linkedin.com/in/khanfaisal79960)
+- ✍️ [Medium](https://medium.com/@khanfaisal79960)
+- 📸 [Instagram](https://instagram.com/mr._perfect_1004)
+- 💻 [GitHub](https://github.com/khanfaisal79960)
 
 ---
-
-## 🤝 Contributing
-
-This project is a personal endeavor, but feel free to fork the repository, experiment, and suggest improvements via pull requests.
-
----
-
-## 📧 Contact & Socials
-
-- **Portfolio:** [khanfaisal.netlify.app](https://khanfaisal.netlify.app)
-- **GitHub:** [github.com/khanfaisal79960](https://github.com/khanfaisal79960)
-- **LinkedIn:** [linkedin.com/in/khanfaisal79960](https://www.linkedin.com/in/khanfaisal79960)
-- **Instagram:** [@mr._perfect_1004](https://instagram.com/mr._perfect_1004)
-- **Medium:** [@khanfaisal79960](https://medium.com/@khanfaisal79960)
