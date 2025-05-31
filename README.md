@@ -27,7 +27,7 @@
 ## 📸 Project Screenshots
 
 | Dashboard | Projects | Teams  |
-|----------|-------|----------|
+|----------|----------|--------|
 | ![Screenshot 1](./assets/screenshot_1.png) | ![Screenshot 2](./assets/screenshot_2.png) | ![Screenshot 3](./assets/screenshot_3.png) |
 
 ---
@@ -68,6 +68,44 @@ Now open your browser and visit: [http://127.0.0.1:5000/](http://127.0.0.1:5000/
 
 ---
 
+## 📁 Project Structure
+
+```
+NovaFlow/
+├── app.py
+├── requirements.txt
+├── vercel.json
+├── README.md
+├── assets/
+│   ├── screenshot_1.png
+│   ├── screenshot_2.png
+│   └── screenshot_3.png
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
+│   └── images/
+│       └── cover_image.png
+└── templates/
+    ├── 404.html
+    ├── add_project.html
+    ├── add_task.html
+    ├── add_team.html
+    ├── base.html
+    ├── edit_project.html
+    ├── edit_task.html
+    ├── index.html
+    ├── join_team.html
+    ├── landing.html
+    ├── login.html
+    ├── project_detail.html
+    ├── signup.html
+    └── teams_dashboard.html
+```
+
+---
+
 ## 🙋‍♂️ Author
 
 **Faisal Khan**
@@ -77,5 +115,3 @@ Now open your browser and visit: [http://127.0.0.1:5000/](http://127.0.0.1:5000/
 - ✍️ [Medium](https://medium.com/@khanfaisal79960)
 - 📸 [Instagram](https://instagram.com/mr._perfect_1004)
 - 💻 [GitHub](https://github.com/khanfaisal79960)
-
----
