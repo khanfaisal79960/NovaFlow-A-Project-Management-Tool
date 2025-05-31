@@ -8,7 +8,7 @@
 
 ## 🌐 Live Demo
 
-👉 [**View Live Demo**](https://novaflow-beryl.vercel.app)
+👉 [**View Live Demo**](https://nova-flow-flame.vercel.app/)
 
 ---
 
